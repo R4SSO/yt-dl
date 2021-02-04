@@ -35,7 +35,7 @@ def widget():
 
     root.linkText = Entry(
         root,
-        width=55,
+        width=70,
         exportselection=0,
         textvariable=video_Link,
         fg="lime",
@@ -65,7 +65,7 @@ def widget():
 
     root.destinationText = Entry(
         root,
-        width=42,
+        width=55,
         textvariable=download_path,
         fg="lime",
         bg="black",
@@ -89,7 +89,8 @@ def widget():
         bg="black",
         fg="lime",
         highlightthickness=1,
-        borderwidth=0
+        borderwidth=0,   
+
     )
 
     browse_B.place(
@@ -98,7 +99,6 @@ def widget():
         anchor="center"
     )
 
-    
     Download_B = Button(
         root,
         text="Download",
@@ -129,8 +129,7 @@ def Download():
     messagebox.showinfo("Succes!",  
                         "Downloaded And Saved In\n" 
                         + download_folder)
-
-
+  
 
 root.geometry("1000x500") 
 root.resizable(False, False) 
